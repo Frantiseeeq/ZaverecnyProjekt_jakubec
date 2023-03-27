@@ -1,4 +1,4 @@
-namespace ZaverecnyProjekt_jakubec
+namespace ZaverecnaPraceIT4_2023
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace ZaverecnyProjekt_jakubec
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Login());
+            Application.Run(new MenuForm());
         }
     }
 }
