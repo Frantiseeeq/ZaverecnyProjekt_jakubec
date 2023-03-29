@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbtnAdmin = new System.Windows.Forms.CheckBox();
+            this.rbtnUser = new System.Windows.Forms.RadioButton();
+            this.rbtnAdmin = new System.Windows.Forms.RadioButton();
             this.TxtPhone = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
@@ -50,7 +51,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cbtnAdmin);
+            this.groupBox1.Controls.Add(this.rbtnUser);
+            this.groupBox1.Controls.Add(this.rbtnAdmin);
             this.groupBox1.Controls.Add(this.TxtPhone);
             this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.txtLastName);
@@ -67,15 +69,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // cbtnAdmin
+            // rbtnUser
             // 
-            this.cbtnAdmin.AutoSize = true;
-            this.cbtnAdmin.Location = new System.Drawing.Point(159, 290);
-            this.cbtnAdmin.Name = "cbtnAdmin";
-            this.cbtnAdmin.Size = new System.Drawing.Size(62, 19);
-            this.cbtnAdmin.TabIndex = 12;
-            this.cbtnAdmin.Text = "Admin";
-            this.cbtnAdmin.UseVisualStyleBackColor = true;
+            this.rbtnUser.AutoSize = true;
+            this.rbtnUser.Location = new System.Drawing.Point(259, 299);
+            this.rbtnUser.Name = "rbtnUser";
+            this.rbtnUser.Size = new System.Drawing.Size(48, 19);
+            this.rbtnUser.TabIndex = 13;
+            this.rbtnUser.TabStop = true;
+            this.rbtnUser.Text = "User";
+            this.rbtnUser.UseVisualStyleBackColor = true;
+            // 
+            // rbtnAdmin
+            // 
+            this.rbtnAdmin.AutoSize = true;
+            this.rbtnAdmin.Location = new System.Drawing.Point(159, 299);
+            this.rbtnAdmin.Name = "rbtnAdmin";
+            this.rbtnAdmin.Size = new System.Drawing.Size(61, 19);
+            this.rbtnAdmin.TabIndex = 12;
+            this.rbtnAdmin.TabStop = true;
+            this.rbtnAdmin.Text = "Admin";
+            this.rbtnAdmin.UseVisualStyleBackColor = true;
             // 
             // TxtPhone
             // 
@@ -133,6 +147,8 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(503, 299);
             this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // txtName
             // 
@@ -180,6 +196,7 @@
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -189,6 +206,7 @@
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // AddEmployee
             // 
@@ -210,7 +228,6 @@
         #endregion
 
         private GroupBox groupBox1;
-        private CheckBox cbtnAdmin;
         private TextBox TxtPhone;
         private TextBox txtEmail;
         private TextBox txtLastName;
@@ -224,5 +241,7 @@
         private GroupBox groupBox2;
         private Button btnDelete;
         private Button btnUpdate;
+        private RadioButton rbtnUser;
+        private RadioButton rbtnAdmin;
     }
 }
