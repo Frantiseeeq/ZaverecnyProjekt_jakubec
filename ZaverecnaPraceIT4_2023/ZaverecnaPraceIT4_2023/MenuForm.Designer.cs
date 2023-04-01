@@ -82,7 +82,7 @@
             // 
             // btnAddEmployee
             // 
-            this.btnAddEmployee.Location = new System.Drawing.Point(125, 12);
+            this.btnAddEmployee.Location = new System.Drawing.Point(117, 12);
             this.btnAddEmployee.Name = "btnAddEmployee";
             this.btnAddEmployee.Size = new System.Drawing.Size(137, 52);
             this.btnAddEmployee.TabIndex = 0;
