@@ -42,7 +42,9 @@ namespace ZaverecnaPraceIT4_2023
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            LoginForm login = new LoginForm();
+            login.Show();
         }
     }
 }
