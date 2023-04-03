@@ -4,8 +4,7 @@ namespace ZaverecnaPraceIT4_2023
     {
         AddEmployee ae = new AddEmployee();
         AddWork aw = new AddWork();
-        AddUser au = new AddUser();
-        public MenuForm()
+        public MenuForm(User user)
         {
             InitializeComponent();
         }
@@ -26,7 +25,8 @@ namespace ZaverecnaPraceIT4_2023
         }
 
         private void btnAddUser_Click(object sender, EventArgs e)
-        {
+        {        
+            AddUser au = new AddUser();
             au.Show();
         }
     }
