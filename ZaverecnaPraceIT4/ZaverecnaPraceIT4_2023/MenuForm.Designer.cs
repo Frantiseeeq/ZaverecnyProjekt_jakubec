@@ -38,6 +38,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.btnSignOut = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -51,6 +52,7 @@
             // 
             this.panel1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(89)))));
+            this.panel1.Controls.Add(this.btnSignOut);
             this.panel1.Controls.Add(this.btnAddUser);
             this.panel1.Controls.Add(this.btnAddWork);
             this.panel1.Controls.Add(this.btnAddEmployee);
@@ -62,7 +64,7 @@
             // 
             // btnAddUser
             // 
-            this.btnAddUser.Location = new System.Drawing.Point(491, 12);
+            this.btnAddUser.Location = new System.Drawing.Point(407, 12);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(137, 52);
             this.btnAddUser.TabIndex = 2;
@@ -72,7 +74,7 @@
             // 
             // btnAddWork
             // 
-            this.btnAddWork.Location = new System.Drawing.Point(796, 12);
+            this.btnAddWork.Location = new System.Drawing.Point(720, 12);
             this.btnAddWork.Name = "btnAddWork";
             this.btnAddWork.Size = new System.Drawing.Size(137, 52);
             this.btnAddWork.TabIndex = 1;
@@ -82,7 +84,7 @@
             // 
             // btnAddEmployee
             // 
-            this.btnAddEmployee.Location = new System.Drawing.Point(117, 12);
+            this.btnAddEmployee.Location = new System.Drawing.Point(18, 12);
             this.btnAddEmployee.Name = "btnAddEmployee";
             this.btnAddEmployee.Size = new System.Drawing.Size(137, 52);
             this.btnAddEmployee.TabIndex = 0;
@@ -147,6 +149,16 @@
             this.dataGridView3.Size = new System.Drawing.Size(290, 487);
             this.dataGridView3.TabIndex = 1;
             // 
+            // btnSignOut
+            // 
+            this.btnSignOut.Location = new System.Drawing.Point(911, 12);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.Size = new System.Drawing.Size(105, 52);
+            this.btnSignOut.TabIndex = 3;
+            this.btnSignOut.Text = "Sign Out";
+            this.btnSignOut.UseVisualStyleBackColor = true;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -183,5 +195,6 @@
         private DataGridView dataGridView2;
         private GroupBox groupBox3;
         private DataGridView dataGridView3;
+        private Button btnSignOut;
     }
 }

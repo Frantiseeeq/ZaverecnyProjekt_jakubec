@@ -125,5 +125,17 @@ namespace ZaverecnaPraceIT4_2023
         {
 
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ID = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+            txtWorkName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtWorkDescription.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+
+
+            btnUpdate.Enabled = true;
+            btnDelete.Enabled = true;
+
+        }
     }
 }
