@@ -1,4 +1,4 @@
-﻿CREATE DATABASE Data
+﻿CREATE DATABASE Datase
 CREATE TABLE [dbo].[Employee] (
     [Employee_Id]          INT          IDENTITY (1, 1) NOT NULL,
     [Employee_FirstName]   VARCHAR (50) NOT NULL,
